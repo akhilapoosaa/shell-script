@@ -1,4 +1,7 @@
 #!/bin/bash
 
-echo "balaji:: Hello aki, i love you"
-echo "aki:: I love you too nani"
+PERSON1=balaji
+PERSON2=aki
+
+echo "$PERSON1: Hello $PERSON1, i love you"
+echo "$PERSON2: I love you too $PERSON2"
