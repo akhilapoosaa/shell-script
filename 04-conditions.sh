@@ -17,4 +17,14 @@
      echo "ERROR:: installing MySQL is fsiled"
  else
      echo "Installing MYSQL is Success"
- fi    
+ fi   
+
+ yum install git -y
+
+ if [ $? -ne 0 ]
+ then 
+     echo "ERROR:: installing Git is fsiled"
+ else
+     echo "Installing Git is Success"
+ fi  
+
