@@ -8,6 +8,13 @@
      exit 1
  else  
     echo "you are a root user"
- fi #means reverse of if, indicating condition
+ fi #means reverse of if, indicating condition and
 
  yum install mysql -y     
+
+ if [ $? -ne 0 ]
+ then 
+     echo "ERROR:: installing MySQL is fsiled"
+ else
+     echo "Installing MYSQL is Success"
+ fi    
