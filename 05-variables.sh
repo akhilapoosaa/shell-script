@@ -3,6 +3,6 @@
 
 echo "please enter your username"
 
-read USERNAME #the value entered above will be automatically attached to USERNAME variable
+read -s USERNAME #the value entered above will be automatically attached to USERNAME variable
 
 echo "USERNAME is: $USERNAME"
