@@ -3,7 +3,7 @@
 ID=$(id -u)
 
 VALIDATE(){
-    if [ $1 -ne 0 ]   #compared to last script as we pass args to varibales here we are passing args to functions
+    if [ $1 -ne 0 ] 
     then 
         echo "ERROR:: $2.....failed"
         exit 1
