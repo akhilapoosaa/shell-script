@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PERSON1=$1
+PERSON1=$1   // passing the arguments //
 PERSON2=$2
 
 echo "$PERSON1: Hi $PERSON2, GM"
