@@ -11,4 +11,4 @@
   tasks:
   - name: checking passenger details using variables
     ansible.builtin.debug:
-      msg: " Hi i am {{Name}}, Travelling to {{Destination}}, on a flight with {{Airlines}}, on {{Date}} at {{Time}}""
+      msg: " Hi i am {{Name}}, Travelling to {{Destination}}, on a flight with {{Airlines}}, on {{Date}} at {{Time}}"
