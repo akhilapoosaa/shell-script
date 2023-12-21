@@ -1,5 +1,5 @@
 #playbook with list of plays
-- name:
+- name: variables from Play level
   hosts: localhost
   tasks: 
   - name: Play-1 and Task-1

@@ -1,0 +1,30 @@
+- name: checking datatypes
+  hosts: localhost
+  vars: 
+   NAME: Akhila
+   Skills: #this is a list type starts with - as skills have more
+   - DevOps
+   - Jenkins
+   - Cloud
+   - Kubernetes
+   Experience: #it is a map type which has key value pairs doesnot have - 
+     DevOps: 4
+     Linux: 4
+     Aws: 2
+   Employer: true #which boolen type
+  tasks:
+  - name: print key value pair
+    ansible.builtin.debug: 
+      msg: "name: {{NAME}}"
+
+  - name: print list
+    ansible.builtin.debug: 
+      msg: "skills: {{Skills}}"
+
+  - name: print map
+    ansible.builtin.debug: 
+      msg: "experience: {{Experience}}" 
+
+  - name: print boolean
+    ansible.builtin.debug: 
+      msg: "Employer: {{Employer}}"      
