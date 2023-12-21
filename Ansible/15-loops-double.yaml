@@ -5,10 +5,10 @@
   tasks: 
   - name: print software
     ansible.builtin.package:  #package is a module
-      name: "{{item}}" #item is a ansible default keyword to work with loop 
-      state: present
+      name: "{{item.name}}" #item is a ansible default keyword to work with loop 
+      state: "{{item.state}}" 
     loop: #here present means install and absent means unistall the package
-    - {name: 'git', state: 'present'}
+    - {name: 'git', state: 'present'}  #an entry is a single item u can add multiples values in the list
     - {name: 'mysql', state: 'absent'}
     - {name: 'postfix', state: 'absent'}
     - {name: 'nginx', state: 'present'}
