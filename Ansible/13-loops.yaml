@@ -1,0 +1,12 @@
+#doing with loops
+- name: loops
+  hosts: localhost
+  tasks: 
+  - name: print flowers
+    ansible.builtin.debug: 
+      msg: "Hello {{item}}" #item is a ansible default keyword to work with loop 
+    loop:
+    - rose
+    - lavender
+    - sunflower
+    - jasmine  
