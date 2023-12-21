@@ -1,0 +1,5 @@
+#playbook with list of plays
+
+-name:
+  hosts: localhost
+  task: 
