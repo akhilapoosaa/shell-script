@@ -1,0 +1,6 @@
+- name: varibales from Play Level
+  hosts: localhost
+  tasks: 
+  - name: checking passenger details using variables from inventory
+    ansible.builtin.debug:
+      msg: " Hi i am {{Name}}, Travelling to {{Destination}}, on a flight with {{Airlines}}, on {{Date}}"
