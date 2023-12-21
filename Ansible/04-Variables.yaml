@@ -6,7 +6,7 @@
     Destination: Italy 
     Airlines: Air India
     Date: 08-1-2024
-    Time: 8.00
+    Time: 8.00 am
 
   tasks:
   - name: checking passenger details using variables
