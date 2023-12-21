@@ -1,0 +1,13 @@
+#installing software with loops
+- name: loops
+  hosts: localhost
+  become: yes
+  tasks: 
+  - name: print software
+    ansible.builtin.package:  #package is a module
+      name: "{{item}}" #item is a ansible default keyword to work with loop 
+      state: present
+    loop:
+    - git
+    - mysql
+    - postfix 
