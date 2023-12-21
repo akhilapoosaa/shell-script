@@ -3,7 +3,7 @@
   hosts: localhost
   tasks: 
   - name: check roboshop user exist or not
-    ansible.builtin.command: is roboshop #id roboshop is a linux command 
+    ansible.builtin.command: id roboshop #id roboshop is a linux command 
     register: User #user is a variable name so that output will be stored in user 
   
   - name: print variable value
