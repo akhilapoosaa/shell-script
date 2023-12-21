@@ -1,6 +1,6 @@
 - name: variables from arguments
   hosts: localhost
   tasks: 
-  - name: checking passenger details using variables from inventory
+  - name: checking animal names using variables from arguments
     ansible.builtin.debug:
-      msg: "Animals in Zoo {{NAME}}, and its {{GENDER}}"
+      msg: "Animals in Zoo {{ANIMALNAME}}, and its {{GENDER}}"
