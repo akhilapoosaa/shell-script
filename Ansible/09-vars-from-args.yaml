@@ -1,6 +1,6 @@
-- name: varibales from Play Level
+- name: variables from arguments
   hosts: localhost
   tasks: 
   - name: checking passenger details using variables from inventory
     ansible.builtin.debug:
-      msg: " list of Animals in Zoo {{NAME}}, and its {{GENDER}}"
+      msg: "Animals in Zoo {{NAME}}, and its {{GENDER}}"
