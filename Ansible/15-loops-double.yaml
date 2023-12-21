@@ -1,0 +1,15 @@
+#installing software with advanced loops
+- name: loops
+  hosts: localhost
+  become: yes
+  tasks: 
+  - name: print software
+    ansible.builtin.package:  #package is a module
+      name: "{{item}}" #item is a ansible default keyword to work with loop 
+      state: present
+    loop: #here present means install and absent means unistall the package
+    - {name: 'git', state: 'present'}
+    - {name: 'mysql', state: 'absent'}
+    - {name: 'postfix', state: 'absent'}
+    - {name: 'nginx', state: 'present'}
+   
