@@ -3,4 +3,4 @@
   tasks: 
   - name: checking animal names using variables from arguments
     ansible.builtin.debug:
-      msg: "Animals in Zoo {{ANIMALNAME}}, and its {{GENDER}}"
+      msg: "name of the animal in Zoo is {{ANIMALNAME}}, and its {{GENDER}}"
