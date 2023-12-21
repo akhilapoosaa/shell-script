@@ -1,5 +1,14 @@
 #playbook with list of plays
-
--name:
+- name:
   hosts: localhost
-  task: 
+  tasks: 
+  - name: Play-1 and Task-1
+    ansible.builtin.debug:
+      msg: "hello from Play-1 and Task-1" 
+
+- name:
+  hosts: localhost
+  tasks:
+  - name: Play-2 and task-2
+    ansible.builtin.debug:
+      msg: "hello from play-2 and Task-2"      
