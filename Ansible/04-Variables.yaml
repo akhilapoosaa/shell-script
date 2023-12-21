@@ -1,0 +1,14 @@
+#using varibales writing a playbook 
+- name:
+  hosts: localhost
+  vars: 
+    Name: Akhila
+    Destination: Italy 
+    Airlines: Air India
+    Date: 08-1-2024
+    Time: 8.00
+
+  tasks:
+  - name: checking passenger details using variables
+    ansible.builtin.debug:
+      msg: " Hi i am {{Name}}, Travelling to {{Destination}}, on a flight with {{Airlines}}, on {{Date}} at {{Time}}""
