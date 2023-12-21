@@ -1,4 +1,4 @@
-#using Play Level variables 
+#using tasks
 - name: varibales from Play Level
   hosts: localhost
   vars: 
@@ -6,8 +6,9 @@
     Destination: Italy 
     Airlines: Air India
     Date: 08-1-2024
-    Time: 8.00 am
-  tasks:
+  tasks: 
   - name: checking passenger details using variables
+    vars: #task level
+     Name: "Akhila Poosa" 
     ansible.builtin.debug:
       msg: " Hi i am {{Name}}, Travelling to {{Destination}}, on a flight with {{Airlines}}, on {{Date}}"
