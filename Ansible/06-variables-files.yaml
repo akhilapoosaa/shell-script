@@ -1,0 +1,10 @@
+#using task level variables
+
+- name: varibales from Play Level
+  hosts: localhost
+  vars_files: 
+  - variables.yaml
+  tasks: 
+  - name: checking variables
+    ansible.builtin.debug:
+      msg: " Hi i am {{Name}}, Travelling to {{Destination}}, on a flight with {{Airlines}}, on {{Date}}"

@@ -1,4 +1,4 @@
-#using tasks
+#using tasks level variables
 - name: varibales from Play Level
   hosts: localhost
   vars: 
@@ -8,7 +8,7 @@
     Date: 08-1-2024
   tasks: 
   - name: checking passenger details using variables
-    vars: #task level
+    vars: #task level it follows the inheritance concept, rewriting the variables from task level
      Name: "Akhila Poosa" 
     ansible.builtin.debug:
       msg: " Hi i am {{Name}}, Travelling to {{Destination}}, on a flight with {{Airlines}}, on {{Date}}"
